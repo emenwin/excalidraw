@@ -12,7 +12,7 @@ import type {
   ToolType,
   UnsubscribeCallback,
   Zoom,
-} from "@excalidraw/excalidraw/types";
+} from "@excalidraw/basis";
 
 import { COLOR_PALETTE } from "./colors";
 import {

@@ -11,16 +11,21 @@
     "jsx": "react-jsx",
     "emitDeclarationOnly": true,
     "paths": {
+      "@excalidraw/basis": ["./basis/src/index.ts"],
+      "@excalidraw/basis/*": ["./basis/src/*"],
       "@excalidraw/common": ["./common/src/index.ts"],
       "@excalidraw/common/*": ["./common/src/*"],
       "@excalidraw/element": ["./element/src/index.ts"],
       "@excalidraw/element/*": ["./element/src/*"],
-      "@excalidraw/excalidraw": ["./excalidraw/index.tsx"],
-      "@excalidraw/excalidraw/*": ["./excalidraw/*"],
       "@excalidraw/math": ["./math/src/index.ts"],
       "@excalidraw/math/*": ["./math/src/*"],
       "@excalidraw/utils": ["./utils/src/index.ts"],
-      "@excalidraw/utils/*": ["./utils/src/*"]
+      "@excalidraw/utils/*": ["./utils/src/*"],
+      "@excalidraw/excalidraw/types": ["./element/src/types_excalidraw.ts"],
+      "@excalidraw/excalidraw/components/App": ["./element/src/app-like.ts"],
+      "@excalidraw/excalidraw/scene/types": ["./element/src/scene_excalidraw.ts"],
+      "@excalidraw/excalidraw/global": ["./basis/global.d.ts"],
+      "@excalidraw/excalidraw/css": ["./basis/global.d.ts"]
     }
   }
 }
