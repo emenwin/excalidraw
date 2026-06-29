@@ -10,7 +10,7 @@ import type {
   ToolType,
   UnsubscribeCallback,
   Zoom,
-} from "@excalidraw/excalidraw/types";
+} from "@excalidraw/basis";
 
 import {
   DEFAULT_VERSION,

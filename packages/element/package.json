@@ -63,8 +63,9 @@
     "build:esm": "rimraf dist && node ../../scripts/buildBase.js && yarn gen:types"
   },
   "dependencies": {
+    "@excalidraw/basis": "0.18.0",
     "@excalidraw/common": "0.18.0",
-    "@excalidraw/math": "0.18.0",
-    "@excalidraw/fractional-indexing": "3.3.0"
+    "@excalidraw/fractional-indexing": "3.3.0",
+    "@excalidraw/math": "0.18.0"
   }
 }
