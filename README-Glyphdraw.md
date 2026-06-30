@@ -29,17 +29,20 @@
 | 分支 | 类型 | 说明 |
 | --- | --- | --- |
 | `glyphdraw/<upstream-7-char-sha>` | 不可变 | 例：`glyphdraw/2535d73` = 上游该 commit + 1 个解耦提交 |
+| `excalidraw/<short-sha>-<label>` | 不可变 | 例：`excalidraw/3372149-2026-06` = 上游 `3372149` + 1 个解耦提交（带日期标签，便于识别追齐批次） |
 | `glyphdraw/current` | 可变指针 | 指向当前推荐 submodule 使用的版本分支 tip |
 
-**当前基线（首个版本分支）**
+**当前基线（`excalidraw/3372149-2026-06`）**
 
 | 项 | 值 |
 | --- | --- |
-| 版本分支 | `glyphdraw/2535d73` |
-| 指针分支 | `glyphdraw/current` → `glyphdraw/2535d73` |
-| 上游基线 commit | `2535d7305485a032b5a860a4538870a0c2d09c5a` |
-| 上游说明 | feat: apply deltas API (#9869)，2025-08-15 |
-| Patch commit | 单提交；执行 `git log --oneline 2535d73..glyphdraw/2535d73` 查看当前 SHA |
+| 版本分支 | `excalidraw/3372149-2026-06` |
+| 指针分支 | `glyphdraw/current` → `excalidraw/3372149-2026-06` |
+| 上游基线 commit | `33721492771919e8569964fe0b034a9cf7f25955` |
+| 上游说明 | feat(packages/excalidraw): export applyDarkModeFilter and simplify (#11429)，2026-06-01 |
+| Patch commit | `49fc7308`；执行 `git log --oneline 3372149..excalidraw/3372149-2026-06` 应仅 1 条解耦提交 |
+
+**历史基线（保留）**：`glyphdraw/2535d73` = 上游 `2535d730` + 解耦 patch `3c2d7dd6`。
 
 ---
 
